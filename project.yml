@@ -1,4 +1,5 @@
-# XcodeGen spec: `brew install xcodegen && xcodegen generate` creates LittleBitesMacros.xcodeproj
+# Optional XcodeGen spec. A ready-made LittleBitesMacros.xcodeproj is already included
+# (regenerate it with `python3 Tools/make_xcodeproj.py`); `xcodegen generate` replaces it.
 #
 # Before running on a device, set DEVELOPMENT_TEAM below (or in Xcode) and, if you change the
 # bundle prefix, update the App Group ID here AND in Shared/WidgetSnapshot.swift.
@@ -29,7 +30,7 @@ targets:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.example.LittleBitesMacros
     info:
-      path: LittleBitesMacros/Info.plist
+      path: Config/LittleBitesMacros-Info.plist
       properties:
         CFBundleDisplayName: LittleBites
         UILaunchScreen: {}
@@ -42,7 +43,7 @@ targets:
           - CFBundleURLName: com.example.LittleBitesMacros
             CFBundleURLSchemes: [littlebites]
     entitlements:
-      path: LittleBitesMacros/LittleBitesMacros.entitlements
+      path: Config/LittleBitesMacros.entitlements
       properties:
         com.apple.security.application-groups: [group.com.example.LittleBitesMacros]
 
@@ -57,12 +58,12 @@ targets:
         PRODUCT_BUNDLE_IDENTIFIER: com.example.LittleBitesMacros.Widgets
         SKIP_INSTALL: YES
     info:
-      path: LittleBitesWidgets/Info.plist
+      path: Config/LittleBitesWidgets-Info.plist
       properties:
         CFBundleDisplayName: LittleBites Widgets
         NSExtension:
           NSExtensionPointIdentifier: com.apple.widgetkit-extension
     entitlements:
-      path: LittleBitesWidgets/LittleBitesWidgets.entitlements
+      path: Config/LittleBitesWidgets.entitlements
       properties:
         com.apple.security.application-groups: [group.com.example.LittleBitesMacros]

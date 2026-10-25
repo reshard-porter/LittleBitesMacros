@@ -1,0 +1,450 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		38FFEF87F04FE85F477AFD14 = {
+			isa = PBXBuildFile;
+			fileRef = CFEE55A02984C083C52C8EFC;
+			settings = {
+				ATTRIBUTES = (
+					RemoveHeadersOnCopy,
+				);
+			};
+		};
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6332FA84B7BDEC43CA23DF4F = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46F86FAA6BBF9AC94A7E4595;
+			proxyType = 1;
+			remoteGlobalIDString = 3B349027366F684A61204B00;
+			remoteInfo = LittleBitesWidgets;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		496AF46EC2762DDF91F78F13 = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				38FFEF87F04FE85F477AFD14,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		84337AD8D27FCD69AF2C4FC2 = {
+			isa = PBXFileReference;
+			explicitFileType = wrapper.application;
+			includeInIndex = 0;
+			path = LittleBitesMacros.app;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CFEE55A02984C083C52C8EFC = {
+			isa = PBXFileReference;
+			explicitFileType = "wrapper.app-extension";
+			includeInIndex = 0;
+			path = LittleBitesWidgets.appex;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		19AA90C05D5E51C61B554CC6 = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		2DA67469E1777D4F7FC4168B = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = LittleBitesMacros;
+			sourceTree = "<group>";
+		};
+		A370E67B0914D2C830BC660C = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Config;
+			sourceTree = "<group>";
+		};
+		F75C4D33111813EFF419C6A1 = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = LittleBitesWidgets;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6EFAB1ECC0D092E20FE51FCD = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82F7385D4FEF2F2E8083F7F6 = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		518DA81DB9B99529C0C0AEBE = {
+			isa = PBXGroup;
+			children = (
+				2DA67469E1777D4F7FC4168B,
+				19AA90C05D5E51C61B554CC6,
+				F75C4D33111813EFF419C6A1,
+				A370E67B0914D2C830BC660C,
+				547D009064F7C3F13BEF3460,
+			);
+			sourceTree = "<group>";
+		};
+		547D009064F7C3F13BEF3460 = {
+			isa = PBXGroup;
+			children = (
+				84337AD8D27FCD69AF2C4FC2,
+				CFEE55A02984C083C52C8EFC,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B349027366F684A61204B00 = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDA4A50F4ADCDF2B4290434C;
+			buildPhases = (
+				95DAD0AC89EF1F52E2DEFFA0,
+				82F7385D4FEF2F2E8083F7F6,
+				6D28937945D4D810B2D340B2,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				F75C4D33111813EFF419C6A1,
+				19AA90C05D5E51C61B554CC6,
+			);
+			name = LittleBitesWidgets;
+			packageProductDependencies = (
+			);
+			productName = LittleBitesWidgets;
+			productReference = CFEE55A02984C083C52C8EFC;
+			productType = "com.apple.product-type.app-extension";
+		};
+		E3435DDA2687639586BF0B70 = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D97B77EAD2380603A3F2A82;
+			buildPhases = (
+				4821909E9BF9E73E471FEA84,
+				6EFAB1ECC0D092E20FE51FCD,
+				F667297ED3AB90EAC07798D4,
+				496AF46EC2762DDF91F78F13,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C2DC6B12B35EDE702AA2274D,
+			);
+			fileSystemSynchronizedGroups = (
+				2DA67469E1777D4F7FC4168B,
+				19AA90C05D5E51C61B554CC6,
+			);
+			name = LittleBitesMacros;
+			packageProductDependencies = (
+			);
+			productName = LittleBitesMacros;
+			productReference = 84337AD8D27FCD69AF2C4FC2;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46F86FAA6BBF9AC94A7E4595 = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					E3435DDA2687639586BF0B70 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					3B349027366F684A61204B00 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = 1F4E3D13C2320EDA50221924;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 518DA81DB9B99529C0C0AEBE;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 547D009064F7C3F13BEF3460;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E3435DDA2687639586BF0B70,
+				3B349027366F684A61204B00,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6D28937945D4D810B2D340B2 = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F667297ED3AB90EAC07798D4 = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4821909E9BF9E73E471FEA84 = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95DAD0AC89EF1F52E2DEFFA0 = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C2DC6B12B35EDE702AA2274D = {
+			isa = PBXTargetDependency;
+			target = 3B349027366F684A61204B00;
+			targetProxy = 6332FA84B7BDEC43CA23DF4F;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		16ACE556BD5CA3C51FD3F043 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				CODE_SIGN_ENTITLEMENTS = Config/LittleBitesMacros.entitlements;
+				INFOPLIST_FILE = "Config/LittleBitesMacros-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = LittleBites;
+				INFOPLIST_KEY_NSCameraUsageDescription = "LittleBites uses the camera to scan grocery receipts and move items into your pantry.";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.LittleBitesMacros;
+			};
+			name = Release;
+		};
+		5D9A21E4E4045E62862A88EA = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				CODE_SIGN_ENTITLEMENTS = Config/LittleBitesWidgets.entitlements;
+				INFOPLIST_FILE = "Config/LittleBitesWidgets-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "LittleBites Widgets";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.LittleBitesMacros.Widgets;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		82000B87E0EC13AD7FD6DA43 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				CODE_SIGN_ENTITLEMENTS = Config/LittleBitesMacros.entitlements;
+				INFOPLIST_FILE = "Config/LittleBitesMacros-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = LittleBites;
+				INFOPLIST_KEY_NSCameraUsageDescription = "LittleBites uses the camera to scan grocery receipts and move items into your pantry.";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.LittleBitesMacros;
+			};
+			name = Debug;
+		};
+		92E165A9035A603BE73D2E62 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 6.0;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B8025BF305DC73BC6F1233D9 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				CODE_SIGN_ENTITLEMENTS = Config/LittleBitesWidgets.entitlements;
+				INFOPLIST_FILE = "Config/LittleBitesWidgets-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "LittleBites Widgets";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.LittleBitesMacros.Widgets;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E1D3BBA94590957B0374D6E9 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 6.0;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D97B77EAD2380603A3F2A82 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82000B87E0EC13AD7FD6DA43,
+				16ACE556BD5CA3C51FD3F043,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F4E3D13C2320EDA50221924 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92E165A9035A603BE73D2E62,
+				E1D3BBA94590957B0374D6E9,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDA4A50F4ADCDF2B4290434C = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D9A21E4E4045E62862A88EA,
+				B8025BF305DC73BC6F1233D9,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46F86FAA6BBF9AC94A7E4595;
+}

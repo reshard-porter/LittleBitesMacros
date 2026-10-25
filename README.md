@@ -8,24 +8,20 @@ Cooking Mode timers as Live Activities on the Lock Screen and in the Dynamic Isl
 
 ## Run it
 
-```bash
-brew install xcodegen
-cd LittleBitesMacros && xcodegen generate
-open LittleBitesMacros.xcodeproj
-```
+Requires **Xcode 16 or later**.
 
-1. Select both targets (**LittleBitesMacros** and **LittleBitesWidgets**) and set your **Team** under Signing & Capabilities.
-2. If you change the bundle prefix from `com.example`, update the App Group ID in `project.yml` **and** in
-   `Shared/WidgetSnapshot.swift` (`appGroupID`). The widget can only read the plan through that shared App Group.
-3. Run on an iPhone or a simulator with a Dynamic Island (iPhone 15 or later) to see the Live Activity.
+1. Open `LittleBitesMacros.xcodeproj`.
+2. Select the project in the sidebar. For **both** targets (**LittleBitesMacros** and **LittleBitesWidgets**),
+   go to Signing & Capabilities and choose your **Team**.
+3. Pick an iPhone simulator (iPhone 15 or later shows the Dynamic Island) and press **Run** (⌘R).
 
-If you set up the Xcode project by hand instead, you need:
-- Two targets: the iOS app, and a **Widget Extension** (uncheck the template's sample code).
-- Files in `Shared/` added to **both** targets, and `LittleBitesWidgets/` added to the extension only.
-- `RecipeLibrary.json` in the app target's **Copy Bundle Resources**.
-- The **App Groups** capability on both targets, with the same group.
-- These keys in the app's Info.plist: `NSSupportsLiveActivities = YES`, `NSCameraUsageDescription`, and a
-  `littlebites` URL scheme.
+To run on your own iPhone, Apple needs unique IDs: change `com.example` in both targets' bundle identifiers, and
+change the App Group (`group.com.example.LittleBitesMacros`) in both `Config/*.entitlements` files **and**
+`Shared/WidgetSnapshot.swift`.
+
+The project uses Xcode 16 synced folders, so any file added to `LittleBitesMacros/`, `Shared/` or
+`LittleBitesWidgets/` is picked up automatically. To rebuild the project file: `python3 Tools/make_xcodeproj.py`.
+If you prefer XcodeGen, `xcodegen generate` builds an equivalent project from `project.yml`.
 
 ### Optional: multi-caregiver sync
 Add **iCloud ▸ CloudKit** and **Background Modes ▸ Remote notifications** to the app target. The store uses
@@ -115,6 +111,7 @@ Siri phrases have to include the app name; that's an Apple requirement. All the 
 | `LittleBitesMacros/ToddlerTrackerView.swift` | Exposure tracker, safe foods, safety guide |
 | `LittleBitesMacros/FeedingEngines.swift` | Age-based safety rules, safe-food guarantee, swaps, Fridge Forager |
 | `LittleBitesWidgets/` | Widget bundle, Today's Menu widget, cooking Live Activity |
+| `Config/` | Info.plist additions (URL scheme, widget extension point) and App Group entitlements |
 
 ## Caveats
 - **Not compiled yet.** This code was written in an environment without Xcode. Expect a few small fixes on the first build.

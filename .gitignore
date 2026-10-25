@@ -1,9 +1,7 @@
 # Xcode
-*.xcodeproj/
 xcuserdata/
 DerivedData/
 build/
-*.xcworkspace/
 # Python
 __pycache__/
 *.pyc
