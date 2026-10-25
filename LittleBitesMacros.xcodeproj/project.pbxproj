@@ -264,6 +264,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = 1;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Config/LittleBitesMacros.entitlements;
 				INFOPLIST_FILE = "Config/LittleBitesMacros-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = LittleBites;
@@ -318,6 +319,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = 1;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Config/LittleBitesMacros.entitlements;
 				INFOPLIST_FILE = "Config/LittleBitesMacros-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = LittleBites;

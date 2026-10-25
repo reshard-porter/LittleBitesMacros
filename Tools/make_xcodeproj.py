@@ -105,6 +105,7 @@ shared_target = {
     "TARGETED_DEVICE_FAMILY": "1",
 }
 app_settings = dict(shared_target, **{
+    "ASSETCATALOG_COMPILER_APPICON_NAME": "AppIcon",
     "CODE_SIGN_ENTITLEMENTS": f"Config/{APP}.entitlements",
     "INFOPLIST_FILE": f"Config/{APP}-Info.plist",
     "INFOPLIST_KEY_CFBundleDisplayName": "LittleBites",

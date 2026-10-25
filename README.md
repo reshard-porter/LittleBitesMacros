@@ -111,6 +111,7 @@ Siri phrases have to include the app name; that's an Apple requirement. All the 
 | `LittleBitesMacros/ToddlerTrackerView.swift` | Exposure tracker, safe foods, safety guide |
 | `LittleBitesMacros/FeedingEngines.swift` | Age-based safety rules, safe-food guarantee, swaps, Fridge Forager |
 | `LittleBitesWidgets/` | Widget bundle, Today's Menu widget, cooking Live Activity |
+| `LittleBitesMacros/Assets.xcassets` | App icon with light, dark and tinted (iOS 18) versions. Redraw with `python3 Tools/make_app_icon.py` |
 | `Config/` | Info.plist additions (URL scheme, widget extension point) and App Group entitlements |
 
 ## Caveats
