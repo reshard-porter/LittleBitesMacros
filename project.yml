@@ -1,0 +1,68 @@
+# XcodeGen spec: `brew install xcodegen && xcodegen generate` creates LittleBitesMacros.xcodeproj
+#
+# Before running on a device, set DEVELOPMENT_TEAM below (or in Xcode) and, if you change the
+# bundle prefix, update the App Group ID here AND in Shared/WidgetSnapshot.swift.
+name: LittleBitesMacros
+options:
+  bundleIdPrefix: com.example
+  deploymentTarget:
+    iOS: "18.0"
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    SWIFT_STRICT_CONCURRENCY: complete
+    MARKETING_VERSION: "1.1"
+    CURRENT_PROJECT_VERSION: "2"
+    TARGETED_DEVICE_FAMILY: "1"
+    # DEVELOPMENT_TEAM: ABCDE12345
+targets:
+  LittleBitesMacros:
+    type: application
+    platform: iOS
+    sources:
+      - path: LittleBitesMacros
+      - path: Shared
+    dependencies:
+      - target: LittleBitesWidgets
+        embed: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.LittleBitesMacros
+    info:
+      path: LittleBitesMacros/Info.plist
+      properties:
+        CFBundleDisplayName: LittleBites
+        UILaunchScreen: {}
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
+        NSCameraUsageDescription: LittleBites uses the camera to scan grocery receipts and move items into your pantry.
+        NSSupportsLiveActivities: true
+        CFBundleURLTypes:
+          - CFBundleURLName: com.example.LittleBitesMacros
+            CFBundleURLSchemes: [littlebites]
+    entitlements:
+      path: LittleBitesMacros/LittleBitesMacros.entitlements
+      properties:
+        com.apple.security.application-groups: [group.com.example.LittleBitesMacros]
+
+  LittleBitesWidgets:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LittleBitesWidgets
+      - path: Shared
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.LittleBitesMacros.Widgets
+        SKIP_INSTALL: YES
+    info:
+      path: LittleBitesWidgets/Info.plist
+      properties:
+        CFBundleDisplayName: LittleBites Widgets
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+    entitlements:
+      path: LittleBitesWidgets/LittleBitesWidgets.entitlements
+      properties:
+        com.apple.security.application-groups: [group.com.example.LittleBitesMacros]
